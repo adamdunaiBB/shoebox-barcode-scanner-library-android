@@ -42,6 +42,13 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$rootProject.supportLibraryVersion"
     implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
     implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
+    implementation "com.uber.autodispose2:autodispose-android:$rootProject.autodisposeVersion"
+    implementation "com.uber.autodispose2:autodispose-androidx-lifecycle:$rootProject.autodisposeVersion"
+    implementation "com.uber.autodispose2:autodispose-lifecycle:$rootProject.autodisposeVersion"
+    implementation "com.uber.autodispose2:autodispose:$rootProject.autodisposeVersion"
+    implementation "io.reactivex.rxjava3:rxandroid:$rootProject.rxAndroidVersion"
+    implementation "io.reactivex.rxjava3:rxjava:$rootProject.rxJavaVersion"
+    implementation "io.reactivex.rxjava3:rxkotlin:$rootProject.rxKotlinVersion"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.kotlinVersion"
 
     ktlint "com.pinterest:ktlint:$rootProject.ktlintVersion"
