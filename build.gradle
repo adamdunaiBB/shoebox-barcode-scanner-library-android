@@ -12,10 +12,10 @@ buildscript {
         versionName = '1.0'
 
         // App dependencies
-        constraintLayoutVersion = '2.0.0'
         gradleVersion = '4.0.1'
         kotlinVersion = '1.4.10'
         ktlintVersion = '0.36.0'
+        navigationVersion = '2.3.0'
         supportLibraryVersion = '1.2.0'
     }
 
