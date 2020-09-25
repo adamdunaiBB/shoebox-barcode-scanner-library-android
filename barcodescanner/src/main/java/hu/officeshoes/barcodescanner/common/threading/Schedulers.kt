@@ -1,4 +1,4 @@
-package hu.officeshoes.barcode.common.threading
+package hu.officeshoes.barcodescanner.common.threading
 
 import android.os.Build
 import android.os.Looper

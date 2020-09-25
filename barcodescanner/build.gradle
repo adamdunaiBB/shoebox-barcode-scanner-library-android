@@ -21,12 +21,56 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
 }
 
-def kotlin_version = '1.4.10'
+configurations {
+    ktlint
+}
+
+def autodisposeVersion = '2.0.0'
+def kotlinVersion = '1.4.10'
+def ktlintVersion = '0.36.0'
+def rxAndroidVersion = '3.0.0'
+def rxJavaVersion = '3.0.6'
+def rxKotlinVersion = '3.0.0'
+def supportLibraryVersion = '1.2.0'
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.1'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation(name: "datacollection", ext: "aar")
+
+    implementation "androidx.appcompat:appcompat:$supportLibraryVersion"
+    implementation "com.uber.autodispose2:autodispose-android:$autodisposeVersion"
+    implementation "com.uber.autodispose2:autodispose-androidx-lifecycle:$autodisposeVersion"
+    implementation "com.uber.autodispose2:autodispose-lifecycle:$autodisposeVersion"
+    implementation "com.uber.autodispose2:autodispose:$autodisposeVersion"
+    implementation "io.reactivex.rxjava3:rxandroid:$rxAndroidVersion"
+    implementation "io.reactivex.rxjava3:rxjava:$rxJavaVersion"
+    implementation "io.reactivex.rxjava3:rxkotlin:$rxKotlinVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
+    ktlint "com.pinterest:ktlint:$ktlintVersion"
+}
+
+task ktlint(type: JavaExec, group: "verification") {
+    description = "Check Kotlin code style."
+    classpath = configurations.ktlint
+    main = "com.pinterest.ktlint.Main"
+    args "src/**/*.kt", "--reporter=checkstyle,output=${buildDir}/reports/ktlint.xml"
+}
+check.dependsOn ktlint
+
+task ktlintFormat(type: JavaExec, group: "formatting") {
+    description = "Fix Kotlin code style deviations."
+    classpath = configurations.ktlint
+    main = "com.pinterest.ktlint.Main"
+    args "-F", "src/**/*.kt", "--reporter=checkstyle,output=${buildDir}/reports/ktlint.xml"
 }

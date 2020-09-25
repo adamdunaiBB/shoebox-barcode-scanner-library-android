@@ -3,8 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="hu.officeshoes.barcode">
 
-    <uses-sdk tools:overrideLibrary="com.honeywell.aidc" />
-
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"

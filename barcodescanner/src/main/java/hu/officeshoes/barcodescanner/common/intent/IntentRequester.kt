@@ -1,10 +1,10 @@
-package hu.officeshoes.barcode.common.intent
+package hu.officeshoes.barcodescanner.common.intent
 
 import android.content.Context
 import android.content.Intent
 import androidx.fragment.app.FragmentActivity
-import hu.officeshoes.barcode.common.fragment.FragmentManagerUtil
-import hu.officeshoes.barcode.common.fragment.IntentRequesterFragment
+import hu.officeshoes.barcodescanner.common.fragment.FragmentManagerUtil
+import hu.officeshoes.barcodescanner.common.fragment.IntentRequesterFragment
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.functions.BiConsumer
 

@@ -1,4 +1,4 @@
-package hu.officeshoes.barcode.common.fragment
+package hu.officeshoes.barcodescanner.common.fragment
 
 import android.content.Context
 import androidx.fragment.app.Fragment

@@ -1,4 +1,4 @@
-package hu.officeshoes.barcode.barcodescanner
+package hu.officeshoes.barcodescanner.scanner
 
 import android.app.Activity
 import android.content.BroadcastReceiver

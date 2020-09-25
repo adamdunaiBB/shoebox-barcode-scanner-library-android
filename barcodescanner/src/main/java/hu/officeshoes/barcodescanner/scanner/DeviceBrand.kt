@@ -1,4 +1,4 @@
-package hu.officeshoes.barcode.barcodescanner
+package hu.officeshoes.barcodescanner.scanner
 
 enum class DeviceBrand(
     val brand: String
