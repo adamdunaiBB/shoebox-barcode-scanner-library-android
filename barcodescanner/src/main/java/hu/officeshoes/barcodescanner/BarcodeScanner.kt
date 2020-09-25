@@ -14,6 +14,9 @@ import java.lang.ref.WeakReference
 
 object BarcodeScanner {
 
+    const val VERSION_CODE = 1
+    const val VERSION_NAME = "1.0.0"
+
     private var barcodeScanner: BaseBarcodeScanner? = null
     private val barcodeScannerListenerMap =
         mutableMapOf<String, WeakReference<BarcodeScannerListener>>()
