@@ -24,10 +24,12 @@ object BarcodeScanner {
                         onBarcodeScanned = ::onBarcodeScanned,
                         onBarcodeScannerError = onBarcodeScannerError
                     )
-                else {
-                    onBarcodeScannerError(BarcodeScannerException("Unknown device: " + Build.BRAND))
-                    null
-                }
+                else
+                    HoneywellOldBarcodeScanner(
+                        activity = activity,
+                        onBarcodeScanned = ::onBarcodeScanned,
+                        onBarcodeScannerError = onBarcodeScannerError
+                    )
             DeviceBrand.ZEBRA.brand ->
                 ZebraBarcodeScanner(
                     activity = activity,
