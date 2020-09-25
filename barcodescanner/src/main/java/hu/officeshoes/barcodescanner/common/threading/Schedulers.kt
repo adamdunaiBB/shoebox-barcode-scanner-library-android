@@ -8,7 +8,7 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 import java.util.concurrent.Executors
 import kotlin.math.max
 
-object Schedulers {
+internal object Schedulers {
 
     val mainScheduler: Scheduler by lazy {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP_MR1)

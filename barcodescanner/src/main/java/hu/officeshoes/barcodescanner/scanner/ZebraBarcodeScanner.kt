@@ -7,7 +7,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import androidx.fragment.app.Fragment
 
-class ZebraBarcodeScanner(
+internal class ZebraBarcodeScanner(
     override val activity: Activity,
     override val onBarcodeScanned: (String) -> Unit,
     override val onBarcodeScannerError: (BarcodeScannerException) -> Unit,

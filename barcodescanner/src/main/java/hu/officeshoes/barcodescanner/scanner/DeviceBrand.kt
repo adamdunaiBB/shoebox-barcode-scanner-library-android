@@ -1,6 +1,6 @@
 package hu.officeshoes.barcodescanner.scanner
 
-enum class DeviceBrand(
+internal enum class DeviceBrand(
     val brand: String
 ) {
     HONEYWELL("Honeywell"),

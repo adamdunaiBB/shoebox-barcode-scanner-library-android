@@ -9,7 +9,7 @@ import autodispose2.autoDispose
 import hu.officeshoes.barcodescanner.common.intent.IntentRequester
 import hu.officeshoes.barcodescanner.common.threading.Schedulers
 
-class HoneywellOldBarcodeScanner(
+internal class HoneywellOldBarcodeScanner(
     override val activity: Activity,
     override val onBarcodeScanned: (String) -> Unit,
     override val onBarcodeScannerError: (BarcodeScannerException) -> Unit
