@@ -17,6 +17,17 @@ object BarcodeScanner {
         onBarcodeScannerError: (BarcodeScannerException) -> Unit
     ) {
         barcodeScanner = when (Build.BRAND) {
+            DeviceBrand.HONEYWELL.brand ->
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN)
+                    HoneywellNewBarcodeScanner(
+                        activity = activity,
+                        onBarcodeScanned = ::onBarcodeScanned,
+                        onBarcodeScannerError = onBarcodeScannerError
+                    )
+                else {
+                    onBarcodeScannerError(BarcodeScannerException("Unknown device: " + Build.BRAND))
+                    null
+                }
             DeviceBrand.ZEBRA.brand ->
                 ZebraBarcodeScanner(
                     activity = activity,
