@@ -2,6 +2,7 @@ package hu.officeshoes.barcodescanner.scanner
 
 import android.app.Activity
 import androidx.fragment.app.Fragment
+import hu.officeshoes.barcodescanner.exception.BarcodeScannerException
 
 internal interface BaseBarcodeScanner {
 

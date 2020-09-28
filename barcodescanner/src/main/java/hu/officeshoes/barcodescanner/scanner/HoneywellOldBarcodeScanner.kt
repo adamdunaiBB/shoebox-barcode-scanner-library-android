@@ -8,6 +8,7 @@ import autodispose2.androidx.lifecycle.AndroidLifecycleScopeProvider
 import autodispose2.autoDispose
 import hu.officeshoes.barcodescanner.common.intent.IntentRequester
 import hu.officeshoes.barcodescanner.common.threading.Schedulers
+import hu.officeshoes.barcodescanner.exception.BarcodeScannerException
 
 internal class HoneywellOldBarcodeScanner(
     override val activity: Activity,

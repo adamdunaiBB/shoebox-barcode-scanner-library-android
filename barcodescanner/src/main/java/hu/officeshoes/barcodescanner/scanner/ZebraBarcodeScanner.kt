@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import androidx.fragment.app.Fragment
+import hu.officeshoes.barcodescanner.exception.BarcodeScannerException
 
 internal class ZebraBarcodeScanner(
     override val activity: Activity,

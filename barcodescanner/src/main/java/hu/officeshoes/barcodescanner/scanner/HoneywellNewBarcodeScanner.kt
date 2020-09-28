@@ -9,6 +9,7 @@ import com.honeywell.aidc.BarcodeReader
 import com.honeywell.aidc.InvalidScannerNameException
 import com.honeywell.aidc.ScannerUnavailableException
 import com.honeywell.aidc.UnsupportedPropertyException
+import hu.officeshoes.barcodescanner.exception.BarcodeScannerException
 
 internal class HoneywellNewBarcodeScanner(
     override val activity: Activity,
