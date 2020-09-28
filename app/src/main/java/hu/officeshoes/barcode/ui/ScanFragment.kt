@@ -5,9 +5,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.annotation.LayoutRes
 import hu.officeshoes.barcode.R
-import hu.officeshoes.barcode.barcodescanner.BarcodeScanner
-import hu.officeshoes.barcode.barcodescanner.BarcodeScannerListener
 import hu.officeshoes.barcode.common.ui.BaseFragment
+import hu.officeshoes.barcodescanner.BarcodeScanner
+import hu.officeshoes.barcodescanner.scanner.BarcodeScannerListener
 import kotlinx.android.synthetic.main.fragment_scan.*
 
 class ScanFragment : BaseFragment(), BarcodeScannerListener {

@@ -1,4 +1,4 @@
-package hu.officeshoes.barcode.barcodescanner
+package hu.officeshoes.barcodescanner.scanner
 
 import android.app.Activity
 import android.content.BroadcastReceiver
@@ -7,7 +7,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import androidx.fragment.app.Fragment
 
-class ZebraBarcodeScanner(
+internal class ZebraBarcodeScanner(
     override val activity: Activity,
     override val onBarcodeScanned: (String) -> Unit,
     override val onBarcodeScannerError: (BarcodeScannerException) -> Unit,

@@ -1,9 +1,9 @@
-package hu.officeshoes.barcode.barcodescanner
+package hu.officeshoes.barcodescanner.scanner
 
 import android.app.Activity
 import androidx.fragment.app.Fragment
 
-interface BaseBarcodeScanner {
+internal interface BaseBarcodeScanner {
 
     val activity: Activity
     val onBarcodeScanned: (String) -> Unit

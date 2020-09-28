@@ -1,4 +1,4 @@
-package hu.officeshoes.barcode.barcodescanner
+package hu.officeshoes.barcodescanner.scanner
 
 import android.app.Activity
 import android.content.Intent
@@ -6,10 +6,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import autodispose2.androidx.lifecycle.AndroidLifecycleScopeProvider
 import autodispose2.autoDispose
-import hu.officeshoes.barcode.common.intent.IntentRequester
-import hu.officeshoes.barcode.common.threading.Schedulers
+import hu.officeshoes.barcodescanner.common.intent.IntentRequester
+import hu.officeshoes.barcodescanner.common.threading.Schedulers
 
-class HoneywellOldBarcodeScanner(
+internal class HoneywellOldBarcodeScanner(
     override val activity: Activity,
     override val onBarcodeScanned: (String) -> Unit,
     override val onBarcodeScannerError: (BarcodeScannerException) -> Unit

@@ -1,11 +1,11 @@
-package hu.officeshoes.barcode.common.fragment
+package hu.officeshoes.barcodescanner.common.fragment
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 
-object FragmentManagerUtil {
+internal object FragmentManagerUtil {
 
     fun <T : Fragment> findFragment(context: Context, fragmentClass: Class<T>): T? =
         findFragment<T>(context, getTagName(fragmentClass))

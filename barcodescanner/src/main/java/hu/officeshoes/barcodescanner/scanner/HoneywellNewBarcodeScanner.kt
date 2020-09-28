@@ -1,4 +1,4 @@
-package hu.officeshoes.barcode.barcodescanner
+package hu.officeshoes.barcodescanner.scanner
 
 import android.app.Activity
 import androidx.fragment.app.Fragment
@@ -10,7 +10,7 @@ import com.honeywell.aidc.InvalidScannerNameException
 import com.honeywell.aidc.ScannerUnavailableException
 import com.honeywell.aidc.UnsupportedPropertyException
 
-class HoneywellNewBarcodeScanner(
+internal class HoneywellNewBarcodeScanner(
     override val activity: Activity,
     override val onBarcodeScanned: (String) -> Unit,
     override val onBarcodeScannerError: (BarcodeScannerException) -> Unit

@@ -1,11 +1,21 @@
-package hu.officeshoes.barcode.barcodescanner
+package hu.officeshoes.barcodescanner
 
 import android.app.Activity
 import android.os.Build
 import androidx.fragment.app.Fragment
+import hu.officeshoes.barcodescanner.scanner.BarcodeScannerException
+import hu.officeshoes.barcodescanner.scanner.BarcodeScannerListener
+import hu.officeshoes.barcodescanner.scanner.BaseBarcodeScanner
+import hu.officeshoes.barcodescanner.scanner.DeviceBrand
+import hu.officeshoes.barcodescanner.scanner.HoneywellNewBarcodeScanner
+import hu.officeshoes.barcodescanner.scanner.HoneywellOldBarcodeScanner
+import hu.officeshoes.barcodescanner.scanner.ZebraBarcodeScanner
 import java.lang.ref.WeakReference
 
 object BarcodeScanner {
+
+    const val VERSION_CODE = 1
+    const val VERSION_NAME = "1.0.0"
 
     private var barcodeScanner: BaseBarcodeScanner? = null
     private val barcodeScannerListenerMap =

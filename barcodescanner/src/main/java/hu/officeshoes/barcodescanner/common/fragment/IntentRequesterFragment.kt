@@ -1,4 +1,4 @@
-package hu.officeshoes.barcode.common.fragment
+package hu.officeshoes.barcodescanner.common.fragment
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import io.reactivex.rxjava3.functions.BiConsumer
 
-class IntentRequesterFragment : Fragment() {
+internal class IntentRequesterFragment : Fragment() {
 
     companion object {
         private const val REQUEST_CODE_KEY = "requestCode"

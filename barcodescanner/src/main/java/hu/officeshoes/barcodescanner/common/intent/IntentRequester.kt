@@ -1,14 +1,14 @@
-package hu.officeshoes.barcode.common.intent
+package hu.officeshoes.barcodescanner.common.intent
 
 import android.content.Context
 import android.content.Intent
 import androidx.fragment.app.FragmentActivity
-import hu.officeshoes.barcode.common.fragment.FragmentManagerUtil
-import hu.officeshoes.barcode.common.fragment.IntentRequesterFragment
+import hu.officeshoes.barcodescanner.common.fragment.FragmentManagerUtil
+import hu.officeshoes.barcodescanner.common.fragment.IntentRequesterFragment
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.functions.BiConsumer
 
-class IntentRequester(private val context: Context) {
+internal class IntentRequester(private val context: Context) {
 
     fun startIntentForResult(intent: Intent, requestCode: Int): Single<Result> =
         Single.create { objectEmitter ->
