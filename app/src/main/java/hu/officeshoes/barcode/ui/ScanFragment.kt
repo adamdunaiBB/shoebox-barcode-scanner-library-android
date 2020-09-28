@@ -1,6 +1,7 @@
 package hu.officeshoes.barcode.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.LayoutRes
@@ -36,6 +37,8 @@ class ScanFragment : BaseFragment(), BarcodeScannerListener {
     }
 
     override fun onBarcodeScanned(barcode: String) {
+        Log.i("SF", "@@@ ScanFragment: Barcode scanned: $barcode")
+
         Toast.makeText(
             getMainActivity(),
             "ScanFragment: Barcode scanned: $barcode",
