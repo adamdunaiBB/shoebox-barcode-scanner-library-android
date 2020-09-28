@@ -1,4 +1,4 @@
-package hu.officeshoes.barcodescanner.scanner
+package hu.officeshoes.barcodescanner.listener
 
 interface BarcodeScannerListener {
 

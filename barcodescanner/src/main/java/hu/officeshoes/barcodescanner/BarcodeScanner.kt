@@ -3,8 +3,8 @@ package hu.officeshoes.barcodescanner
 import android.app.Activity
 import android.os.Build
 import androidx.fragment.app.Fragment
-import hu.officeshoes.barcodescanner.scanner.BarcodeScannerException
-import hu.officeshoes.barcodescanner.scanner.BarcodeScannerListener
+import hu.officeshoes.barcodescanner.exception.BarcodeScannerException
+import hu.officeshoes.barcodescanner.listener.BarcodeScannerListener
 import hu.officeshoes.barcodescanner.scanner.BaseBarcodeScanner
 import hu.officeshoes.barcodescanner.scanner.DeviceBrand
 import hu.officeshoes.barcodescanner.scanner.HoneywellNewBarcodeScanner

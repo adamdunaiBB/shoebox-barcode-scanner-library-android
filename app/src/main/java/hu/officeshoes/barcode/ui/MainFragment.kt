@@ -9,7 +9,7 @@ import hu.officeshoes.barcode.MainNavigatorImpl
 import hu.officeshoes.barcode.R
 import hu.officeshoes.barcode.common.ui.BaseFragment
 import hu.officeshoes.barcodescanner.BarcodeScanner
-import hu.officeshoes.barcodescanner.scanner.BarcodeScannerListener
+import hu.officeshoes.barcodescanner.listener.BarcodeScannerListener
 import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment : BaseFragment(), BarcodeScannerListener {
