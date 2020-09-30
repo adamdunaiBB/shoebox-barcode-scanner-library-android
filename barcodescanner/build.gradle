@@ -10,8 +10,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 30
-        versionCode 4
-        versionName "1.0.4"
+        versionCode 5
+        versionName "1.0.5"
 
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -96,14 +96,11 @@ project.afterEvaluate {
                         dependencyNode.appendNode('artifactId', dp.name)
                         dependencyNode.appendNode('version', dp.version)
 
-                        // for exclusions
-                        if (dp.excludeRules.size() > 0) {
-                            def exclusions = dependencyNode.appendNode('exclusions')
-                            dp.excludeRules.each { ExcludeRule ex ->
-                                def exclusion = exclusions.appendNode('exclusion')
-                                exclusion.appendNode('groupId', ex.group)
-                                exclusion.appendNode('artifactId', ex.module)
-                            }
+                        Node pomNode = asNode()
+                        pomNode.dependencies.'*'.findAll() {
+                            it.artifactId.text() == 'datacollection'
+                        }.each() {
+                            it.parent().remove(it)
                         }
                     }
                 }
