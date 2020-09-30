@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a9b18fe2-a531-44f3-8530-470b942cdbb1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_S_API_15" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="1i0I6h9NycYu2szMMF4peYlMAu5" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="foxconn_international_holdings_limited-dolphin_70e_black-14023J00A2" />
+    <property name="DEBUGGABLE_PROCESS" value="hu.officeshoes.barcode" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="17338522500703" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-09-30T11:38:14.641Z" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="ScreenshotViewer.SavePath" value="$USER_HOME$/Desktop" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="language.cpp" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RunManager" selected="Gradle.shoebox-barcode-scanner-library-android [afterEvaluate]">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="shoebox-barcode-scanner-library-android [afterEvaluate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="afterEvaluate" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="shoebox-barcode-scanner-library-android [copyLibs]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="copyLibs" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="shoebox-barcode-scanner-library-android [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="uploadArchives" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.shoebox-barcode-scanner-library-android [afterEvaluate]" />
+        <item itemvalue="Gradle.shoebox-barcode-scanner-library-android [uploadArchives]" />
+        <item itemvalue="Gradle.shoebox-barcode-scanner-library-android [copyLibs]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9b18fe2-a531-44f3-8530-470b942cdbb1" name="Default Changelist" comment="" />
+      <created>1601037908960</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601037908960</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="485" y="339" width="1200" height="522" key="#PSD" timestamp="1601472510609">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="485" y="339" width="1200" height="522" key="#PSD/276.1223.1440.845/0.0.1920.1200@0.0.1920.1200" timestamp="1601472510609" />
+    <state x="653" y="271" key="#app" timestamp="1601465862645">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="653" y="271" key="#app/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601465862645" />
+    <state x="723" y="310" key="#xdebugger.evaluate" timestamp="1601039608889">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="723" y="310" key="#xdebugger.evaluate/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601039608889" />
+    <state x="816" y="372" key="AndroidProcessChooserDialog" timestamp="1601039590225">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="816" y="372" key="AndroidProcessChooserDialog/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601039590225" />
+    <state width="1878" height="217" key="GridCell.Tab.0.bottom" timestamp="1601473171806">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601451703369" />
+    <state width="1878" height="217" key="GridCell.Tab.0.bottom/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601473171806" />
+    <state width="1878" height="217" key="GridCell.Tab.0.center" timestamp="1601473171803">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601451703368" />
+    <state width="1878" height="217" key="GridCell.Tab.0.center/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601473171803" />
+    <state width="1878" height="217" key="GridCell.Tab.0.left" timestamp="1601473171802">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601451703368" />
+    <state width="1878" height="217" key="GridCell.Tab.0.left/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601473171802" />
+    <state width="1878" height="217" key="GridCell.Tab.0.right" timestamp="1601473171805">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601451703368" />
+    <state width="1878" height="217" key="GridCell.Tab.0.right/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601473171805" />
+    <state x="446" y="168" key="RollbackChangesDialog" timestamp="1601451708283">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="446" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1601451708283" />
+    <state x="224" y="23" width="1112" height="1177" key="ScreenshotViewer.Dimensions" timestamp="1601136043009">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="224" y="23" width="1112" height="1177" key="ScreenshotViewer.Dimensions/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601136043009" />
+    <state x="667" y="499" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601465548310">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="500" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1601451742328" />
+    <state x="667" y="499" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601465548310" />
+    <state x="612" y="357" width="740" height="486" key="find.popup" timestamp="1601466263028">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="612" y="357" width="740" height="486" key="find.popup/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601466263028" />
+    <state x="632" y="350" key="psd.add.library.dependency.panel.dimension" timestamp="1601472425911">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="632" y="350" key="psd.add.library.dependency.panel.dimension/276.1223.1440.877/0.0.1920.1200@0.0.1920.1200" timestamp="1601472425911" />
+    <state x="513" y="261" width="894" height="902" key="search.everywhere.popup" timestamp="1601465542397">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601451699284" />
+    <state x="513" y="261" width="894" height="902" key="search.everywhere.popup/276.1200.1440.900/0.0.1920.1200@0.0.1920.1200" timestamp="1601465542397" />
+  </component>
+</project>
