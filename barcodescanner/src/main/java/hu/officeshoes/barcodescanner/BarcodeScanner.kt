@@ -1,11 +1,16 @@
 package hu.officeshoes.barcodescanner
 
 import android.app.Activity
+import android.os.Build
 import androidx.fragment.app.Fragment
 import hu.officeshoes.barcodescanner.exception.BarcodeScannerException
 import hu.officeshoes.barcodescanner.listener.BarcodeScannerListener
+import hu.officeshoes.barcodescanner.scanner.DeviceBrand
+import hu.officeshoes.barcodescanner.scanner.HoneywellNewBarcodeScanner
 import hu.officeshoes.barcodescanner.scanner.HoneywellOldBarcodeScanner
+import hu.officeshoes.barcodescanner.scanner.ZebraBarcodeScanner
 import hu.officeshoes.barcodescanner.scanner.handler.BaseBarcodeScannerListenerHandler
+import hu.officeshoes.barcodescanner.scanner.handler.MultiBarcodeScannerListenerHandler
 import hu.officeshoes.barcodescanner.scanner.handler.SingleBarcodeScannerListenerHandler
 
 object BarcodeScanner {
@@ -20,39 +25,38 @@ object BarcodeScanner {
         zebraDataWedgeIntentAction: String,
         onBarcodeScannerError: (BarcodeScannerException) -> Unit
     ) {
-        barcodeScannerListenerHandler = SingleBarcodeScannerListenerHandler(
-            HoneywellOldBarcodeScanner(
-                activity = activity,
-                onBarcodeScanned = ::onBarcodeScanned,
-                onBarcodeScannerError = onBarcodeScannerError
-            )
-        )
-//        barcodeScannerListenerHandler = when (Build.BRAND) {
-//            DeviceBrand.HONEYWELL.brand ->
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN)
-//                    MultiBarcodeScannerListenerHandler(
-//                        HoneywellNewBarcodeScanner(
-//                            activity = activity,
-//                            onBarcodeScanned = ::onBarcodeScanned,
-//                            onBarcodeScannerError = onBarcodeScannerError
-//                        )
-//                    )
-//                else
-//
-//            DeviceBrand.ZEBRA.brand ->
-//                MultiBarcodeScannerListenerHandler(
-//                    ZebraBarcodeScanner(
-//                        activity = activity,
-//                        onBarcodeScanned = ::onBarcodeScanned,
-//                        onBarcodeScannerError = onBarcodeScannerError,
-//                        zebraDataWedgeIntentAction = zebraDataWedgeIntentAction
-//                    )
-//                )
-//            else -> {
-//                onBarcodeScannerError(BarcodeScannerException("Unknown device: " + Build.BRAND))
-//                null
-//            }
-//        }
+        barcodeScannerListenerHandler = when (Build.BRAND) {
+            DeviceBrand.HONEYWELL.brand ->
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN)
+                    MultiBarcodeScannerListenerHandler(
+                        HoneywellNewBarcodeScanner(
+                            activity = activity,
+                            onBarcodeScanned = ::onBarcodeScanned,
+                            onBarcodeScannerError = onBarcodeScannerError
+                        )
+                    )
+                else
+                    SingleBarcodeScannerListenerHandler(
+                        HoneywellOldBarcodeScanner(
+                            activity = activity,
+                            onBarcodeScanned = ::onBarcodeScanned,
+                            onBarcodeScannerError = onBarcodeScannerError
+                        )
+                    )
+            DeviceBrand.ZEBRA.brand ->
+                MultiBarcodeScannerListenerHandler(
+                    ZebraBarcodeScanner(
+                        activity = activity,
+                        onBarcodeScanned = ::onBarcodeScanned,
+                        onBarcodeScannerError = onBarcodeScannerError,
+                        zebraDataWedgeIntentAction = zebraDataWedgeIntentAction
+                    )
+                )
+            else -> {
+                onBarcodeScannerError(BarcodeScannerException("Unknown device: " + Build.BRAND))
+                null
+            }
+        }
     }
 
     fun registerListener(
